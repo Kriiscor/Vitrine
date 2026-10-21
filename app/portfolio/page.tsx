@@ -6,8 +6,8 @@ const projects = [
     category: "Application web · IA",
     emoji: "🍒",
     color: "bg-red-100",
-    tags: ["TypeScript", "Analyse IA", "Nutrition", "Sport"],
-    desc: "Plateforme complète de suivi santé : enregistrement des repas, analyse nutritionnelle par IA, gestion des séances de sport et suivi de l'évolution du poids. Tableaux de bord personnalisés et insights intelligents.",
+    tags: ["React", "TypeScript", "Supabase", "IA"],
+    desc: "Plateforme complète de suivi santé développée avec React et Supabase : enregistrement des repas avec analyse nutritionnelle par IA, gestion des séances de sport et suivi de l'évolution du poids sur la durée.",
     highlights: [
       "Enregistrement et analyse des repas par IA",
       "Suivi des séances de sport",
