@@ -104,29 +104,27 @@ export default function AProposPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-b from-stone-50 to-white">
+      <section className="py-20 bg-white border-b border-stone-100">
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h1 className="font-display text-4xl sm:text-5xl font-bold text-stone-900 mb-6">
-                Développeur web,{" "}
-                <span className="text-brand-500">pas juste codeur.</span>
+                Corentin Dubail
               </h1>
-              <p className="text-lg text-stone-600 leading-relaxed mb-6">
-                Je suis Corentin Dubail, développeur fullstack basé à Guyancourt (78).
-                2 ans d&apos;expérience en React, TypeScript, C#/.NET et SQL, dans des environnements
-                Agile avec livraison de projets concrets.
+              <p className="text-lg text-stone-500 leading-relaxed mb-6">
+                Développeur fullstack basé à Guyancourt (78). Le jour chez JCDecaux,
+                le reste du temps sur mes propres projets et ceux de mes clients.
               </p>
-              <p className="text-stone-600 leading-relaxed mb-8">
-                En freelance, je mets cette expérience au service de projets sur mesure :
-                sites vitrines, plateformes événementielles, outils métier. Chaque projet
-                commence par une vraie compréhension de votre besoin.
+              <p className="text-stone-500 leading-relaxed mb-8">
+                J&apos;ai deux ans d&apos;expérience en production — React, TypeScript, C#/.NET, SQL.
+                J&apos;ai travaillé sur une app chez Giva Assurances qui a vraiment changé quelque chose
+                pour leurs équipes. C&apos;est le genre de travail qui m&apos;intéresse.
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center px-6 py-3.5 bg-brand-500 text-white font-medium rounded-xl hover:bg-brand-600 transition-colors shadow-sm"
+                className="inline-flex items-center px-6 py-3.5 bg-stone-900 text-white font-medium rounded-xl hover:bg-stone-700 transition-colors"
               >
-                Travailler ensemble
+                Me contacter
               </Link>
             </div>
 
@@ -239,22 +237,22 @@ export default function AProposPage() {
       <section className="py-20 bg-white">
         <div className="container-site">
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-bold text-stone-900 mb-6">
-              Mon approche
+            <h2 className="font-display text-2xl font-bold text-stone-900 mb-6">
+              Comment je travaille
             </h2>
-            <div className="space-y-4 text-stone-600 leading-relaxed">
+            <div className="space-y-4 text-stone-500 leading-relaxed">
               <p>
-                Je crois que le meilleur code est celui qu&apos;on n&apos;a pas à réécrire. Ça
-                commence par une bonne compréhension du problème : qui sont les utilisateurs,
-                quels sont leurs besoins, quelles sont les contraintes techniques et business.
+                Je commence toujours par comprendre ce que vous faites, pas par choisir
+                un framework. L&apos;outil doit servir le besoin, pas l&apos;inverse.
               </p>
               <p>
-                Je travaille en cycles courts avec des points réguliers, pour que vous puissiez
-                réorienter si besoin. Pas de livraison surprise après plusieurs semaines de silence.
+                Je travaille seul. Vous avez affaire à la même personne du début à la fin —
+                pas de relay chef de projet / dev junior. Ça veut dire moins de friction,
+                et des décisions prises plus vite.
               </p>
               <p>
-                Chaque projet est livré avec son code source et une documentation claire.
-                Mon objectif : que vous soyez autonomes une fois le projet terminé.
+                À la livraison : le code source vous appartient, avec une doc lisible.
+                Si vous voulez faire évoluer le projet avec quelqu&apos;un d&apos;autre un jour, vous pouvez.
               </p>
             </div>
           </div>
@@ -278,20 +276,31 @@ export default function AProposPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-brand-500">
-        <div className="container-site text-center">
-          <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-4">
-            Un projet en tête ?
-          </h2>
-          <p className="text-brand-100 mb-8">
-            Je serais ravi d&apos;en discuter avec vous.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center px-6 py-3.5 bg-white text-brand-600 font-semibold rounded-xl hover:bg-brand-50 transition-colors shadow-sm"
-          >
-            Prendre contact
-          </Link>
+      <section className="py-16 bg-stone-900">
+        <div className="container-site">
+          <div className="max-w-lg">
+            <h2 className="font-display text-2xl font-bold text-white mb-3">
+              Un projet en tête ?
+            </h2>
+            <p className="text-stone-400 mb-8">
+              Écrivez-moi deux lignes sur ce que vous voulez construire.
+              Je réponds vite.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3.5 bg-white text-stone-900 font-medium rounded-xl hover:bg-stone-100 transition-colors"
+              >
+                Démarrer
+              </Link>
+              <a
+                href="mailto:corentindubail@gmail.com"
+                className="inline-flex items-center justify-center px-6 py-3.5 border border-stone-700 text-stone-400 font-medium rounded-xl hover:border-stone-500 transition-colors"
+              >
+                corentindubail@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
