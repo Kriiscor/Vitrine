@@ -2,24 +2,43 @@ import Link from "next/link";
 
 const experiences = [
   {
-    period: "2024 – Aujourd'hui",
+    period: "2026 – Aujourd'hui",
     company: "JCDecaux",
     role: "Développeur Web & IA",
-    desc: "Développement d'applications web internes et de solutions d'intelligence artificielle pour le leader mondial de la communication extérieure.",
+    desc: "Développement d'applications web et de solutions d'intelligence artificielle au sein du leader mondial de la communication extérieure.",
+    tags: [],
     current: true,
   },
   {
-    period: "2024 – 2026",
-    company: "Giva",
-    role: "Développeur Fullstack (Freelance)",
-    desc: "Conception et développement d'une plateforme collaborative de gestion de cadeaux. React, Node.js, PostgreSQL, AWS.",
+    period: "Déc. 2025 – Mai 2026",
+    company: "Giva Assurances · Paris – La Défense",
+    role: "Développeur Web Fullstack",
+    desc: "Conception et développement from scratch d'une application client (React, TypeScript, .NET) réduisant la collecte d'informations de 1h d'appels téléphoniques à quelques minutes en ligne. API REST C#/.NET, automatisation agentique.",
+    tags: ["React", "TypeScript", ".NET", "C#", "SQL"],
     current: false,
   },
   {
-    period: "2023 – 2024",
-    company: "Euro Mobilier",
-    role: "Développeur Fullstack (Freelance)",
-    desc: "Dashboard analytique pour le suivi des ventes et de la gestion des stocks d'un distributeur national de mobilier.",
+    period: "Déc. 2024 – Déc. 2025",
+    company: "Giva Assurances · Paris – La Défense",
+    role: "Alternance – Développeur Web Fullstack",
+    desc: "Endpoint d'ingestion en base (C#, SQL) et scénario Make/Twilio pour stocker et exposer les messages clients en temps réel dans le CRM. Développement de composants UI (React, TypeScript) dans un environnement Agile (Azure, Git).",
+    tags: ["React", "TypeScript", "C#", "SQL", "Azure", "Make"],
+    current: false,
+  },
+  {
+    period: "Déc. 2023 – Déc. 2024",
+    company: "Euro Mobilier CHR · Paris",
+    role: "Alternance – Développeur Web",
+    desc: "Analyse des performances du site e-commerce (trafic, conversions, parcours utilisateurs) avec Google Analytics. Analyse SEO/SEA (Google Ads) : suivi des coûts, performances et ROI. Création de reportings et tableaux de bord pour orienter les décisions marketing.",
+    tags: ["Google Analytics", "Google Ads", "SEO/SEA", "PowerBI"],
+    current: false,
+  },
+  {
+    period: "Juin 2022 – Août 2022",
+    company: "Lumeens · Télétravail",
+    role: "Stage – Développeur Web Node.js",
+    desc: "Analyse des besoins utilisateurs et développement d'un outil d'administration (Node.js, Firebase). Optimisation de l'expérience utilisateur et mise en place d'un site responsive.",
+    tags: ["Node.js", "Firebase"],
     current: false,
   },
 ];
@@ -27,37 +46,37 @@ const experiences = [
 const skills = [
   {
     category: "Langages",
-    items: ["TypeScript", "JavaScript", "Python", "SQL", "HTML/CSS"],
+    items: ["JavaScript", "TypeScript", "Python", "C#", "PHP", "HTML", "CSS", "Java"],
     color: "bg-blue-50 border-blue-100",
     tag: "bg-blue-100 text-blue-700",
   },
   {
-    category: "Frameworks & Librairies",
-    items: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS"],
+    category: "Frameworks & Libs",
+    items: ["React.js", "Node.js", ".NET", "ASP.NET"],
     color: "bg-emerald-50 border-emerald-100",
     tag: "bg-emerald-100 text-emerald-700",
   },
   {
     category: "Bases de données",
-    items: ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
+    items: ["SQL Server", "MySQL", "PostgreSQL", "MongoDB", "Firebase"],
     color: "bg-violet-50 border-violet-100",
     tag: "bg-violet-100 text-violet-700",
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "CI/CD", "Vercel", "GitHub Actions"],
+    items: ["Azure", "Docker", "Git", "CI/CD"],
     color: "bg-orange-50 border-orange-100",
     tag: "bg-orange-100 text-orange-700",
   },
   {
     category: "Outils & Méthodes",
-    items: ["Git", "Agile/Scrum", "Figma", "REST API", "GraphQL"],
+    items: ["Figma", "PowerBI", "UML", "BPMN", "Agile / Scrum", "TDD", "API REST"],
     color: "bg-rose-50 border-rose-100",
     tag: "bg-rose-100 text-rose-700",
   },
   {
     category: "IA & Automatisation",
-    items: ["LLM / Prompt Engineering", "LangChain", "Automatisation", "Claude API"],
+    items: ["Outils IA", "Processus agentique", "Make / Zapier"],
     color: "bg-amber-50 border-amber-100",
     tag: "bg-amber-100 text-amber-700",
   },
@@ -65,19 +84,19 @@ const skills = [
 
 const education = [
   {
-    year: "2024",
-    degree: "Bac +4 Expert en Développement Web",
+    year: "2024 – 2025",
+    degree: "Bac+4 – Développeur Fullstack (alternance)",
     school: "Cloud Campus",
   },
   {
-    year: "2023",
-    degree: "Bac +3 Développeur Web & Mobile",
-    school: "Ingétis",
+    year: "2019 – 2022",
+    degree: "Bac+3 – Expert en Systèmes Informatiques",
+    school: "Ingétis Paris",
   },
   {
-    year: "2022",
-    degree: "BTS SIO option SLAM",
-    school: "Lycée Technique",
+    year: "2017 – 2019",
+    degree: "BTS SIO – Option SLAM",
+    school: "ORT Daniel Mayer",
   },
 ];
 
@@ -94,14 +113,14 @@ export default function AProposPage() {
                 <span className="text-brand-500">pas juste codeur.</span>
               </h1>
               <p className="text-lg text-stone-600 leading-relaxed mb-6">
-                Je suis Corentin Dubail, développeur fullstack basé en Île-de-France.
-                Je travaille en freelance sous statut micro-entreprise, parallèlement à mon
-                poste de développeur Web & IA chez JCDecaux.
+                Je suis Corentin Dubail, développeur fullstack basé à Guyancourt (78).
+                2 ans d&apos;expérience en React, TypeScript, C#/.NET et SQL, dans des environnements
+                Agile avec livraison de projets concrets.
               </p>
               <p className="text-stone-600 leading-relaxed mb-8">
-                Ce qui me distingue : je prends le temps de comprendre votre métier avant
-                d&apos;écrire la première ligne de code. Un site ou une application bien pensé
-                commence toujours par une bonne compréhension des enjeux.
+                En freelance, je mets cette expérience au service de projets sur mesure :
+                sites vitrines, plateformes événementielles, outils métier. Chaque projet
+                commence par une vraie compréhension de votre besoin.
               </p>
               <Link
                 href="/contact"
@@ -118,15 +137,16 @@ export default function AProposPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-stone-900 text-lg">Corentin Dubail</div>
-                  <div className="text-sm text-stone-500">Développeur Web Freelance</div>
+                  <div className="text-sm text-stone-500">Développeur Web Fullstack Freelance</div>
                 </div>
               </div>
               <div className="space-y-3">
                 {[
-                  { icon: "📍", text: "Île-de-France · Remote possible" },
+                  { icon: "📍", text: "Guyancourt (78) · Remote possible" },
                   { icon: "🏢", text: "Développeur Web & IA chez JCDecaux" },
-                  { icon: "📋", text: "Micro-entreprise (SIRET disponible)" },
+                  { icon: "📋", text: "Micro-entreprise" },
                   { icon: "✅", text: "Disponible pour de nouveaux projets" },
+                  { icon: "🌍", text: "Anglais avancé" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3 text-sm text-stone-600">
                     <span>{item.icon}</span>
@@ -147,13 +167,17 @@ export default function AProposPage() {
           </h2>
           <div className="relative">
             <div className="absolute left-4 top-0 bottom-0 w-px bg-stone-200" />
-            <div className="space-y-10">
+            <div className="space-y-8">
               {experiences.map((exp) => (
-                <div key={exp.company} className="relative pl-12">
-                  <div className={`absolute left-0 top-1 w-8 h-8 rounded-full border-2 flex items-center justify-center ${exp.current ? "bg-brand-500 border-brand-500" : "bg-white border-stone-300"}`}>
-                    {exp.current && (
-                      <div className="w-2 h-2 rounded-full bg-white" />
-                    )}
+                <div key={`${exp.company}-${exp.period}`} className="relative pl-12">
+                  <div
+                    className={`absolute left-0 top-1.5 w-8 h-8 rounded-full border-2 flex items-center justify-center ${
+                      exp.current
+                        ? "bg-brand-500 border-brand-500"
+                        : "bg-white border-stone-300"
+                    }`}
+                  >
+                    {exp.current && <div className="w-2 h-2 rounded-full bg-white" />}
                   </div>
                   <div className="bg-stone-50 rounded-xl p-6 border border-stone-100">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
@@ -168,7 +192,16 @@ export default function AProposPage() {
                     </div>
                     <h3 className="font-semibold text-stone-900 text-lg mb-1">{exp.role}</h3>
                     <div className="text-brand-600 font-medium text-sm mb-3">{exp.company}</div>
-                    <p className="text-sm text-stone-600 leading-relaxed">{exp.desc}</p>
+                    <p className="text-sm text-stone-600 leading-relaxed mb-3">{exp.desc}</p>
+                    {exp.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5">
+                        {exp.tags.map((tag) => (
+                          <span key={tag} className="text-xs px-2 py-0.5 bg-stone-200 text-stone-600 rounded-full">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -217,11 +250,11 @@ export default function AProposPage() {
               </p>
               <p>
                 Je travaille en cycles courts avec des points réguliers, pour que vous puissiez
-                réorienter si besoin. Pas de livraison surprise après 3 mois de silence.
+                réorienter si besoin. Pas de livraison surprise après plusieurs semaines de silence.
               </p>
               <p>
-                Chaque projet est livré avec son code source, une documentation et une formation
-                si nécessaire. Mon objectif : que vous soyez autonomes une fois le projet terminé.
+                Chaque projet est livré avec son code source et une documentation claire.
+                Mon objectif : que vous soyez autonomes une fois le projet terminé.
               </p>
             </div>
           </div>

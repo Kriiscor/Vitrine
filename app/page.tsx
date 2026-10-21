@@ -76,25 +76,25 @@ const process = [
 
 const projects = [
   {
-    title: "Giva",
+    title: "Cherry's",
+    category: "Application · IA",
+    desc: "Plateforme de suivi nutrition & sport avec analyse IA des repas et évolution du poids.",
+    color: "bg-red-100",
+    emoji: "🍒",
+    href: "/portfolio",
+  },
+  {
+    title: "Giva Assurances",
     category: "Application métier",
-    desc: "Plateforme de gestion de cadeaux collaboratifs. React, Node.js, PostgreSQL.",
-    color: "bg-emerald-100",
-    emoji: "🎁",
-    href: "/portfolio",
-  },
-  {
-    title: "Euro Mobilier",
-    category: "Dashboard analytique",
-    desc: "Interface d'analyse des ventes et stocks pour un distributeur de mobilier.",
+    desc: "Application client React/TypeScript/.NET : collecte d'infos réduite de 1h à quelques minutes.",
     color: "bg-blue-100",
-    emoji: "📊",
+    emoji: "🛡️",
     href: "/portfolio",
   },
   {
-    title: "Mariage Demo",
+    title: "Projet Mariage",
     category: "Site événementiel",
-    desc: "Site de mariage avec RSVP en ligne, planning et galerie photo interactive.",
+    desc: "Application fullstack de gestion d'événement de mariage avec gestion des invités.",
     color: "bg-rose-100",
     emoji: "💐",
     href: "/portfolio",
