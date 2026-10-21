@@ -104,10 +104,10 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <a
-                  href="mailto:contact@corentindubail.fr"
+                  href="mailto:corentindubail@gmail.com"
                   className="text-sm text-stone-400 hover:text-white transition-colors"
                 >
-                  contact@corentindubail.fr
+                  corentindubail@gmail.com
                 </a>
               </li>
               <li className="text-sm text-stone-400">Île-de-France · Remote</li>

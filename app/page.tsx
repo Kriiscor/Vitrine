@@ -335,7 +335,7 @@ export default function Home() {
               Démarrer maintenant
             </Link>
             <a
-              href="mailto:contact@corentindubail.fr"
+              href="mailto:corentindubail@gmail.com"
               className="inline-flex items-center justify-center px-8 py-4 border border-brand-400 text-white font-medium rounded-xl hover:bg-brand-600 transition-colors"
             >
               Écrire directement

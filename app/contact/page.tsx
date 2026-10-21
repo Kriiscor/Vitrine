@@ -331,13 +331,13 @@ export default function ContactPage() {
               <h3 className="font-semibold text-stone-900 mb-4">Contact direct</h3>
               <div className="space-y-3">
                 <a
-                  href="mailto:contact@corentindubail.fr"
+                  href="mailto:corentindubail@gmail.com"
                   className="flex items-center gap-3 text-sm text-stone-600 hover:text-brand-600 transition-colors"
                 >
                   <svg className="w-4 h-4 text-brand-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  contact@corentindubail.fr
+                  corentindubail@gmail.com
                 </a>
                 <a
                   href="https://linkedin.com/in/corentin-dubail"
